@@ -107,6 +107,10 @@ print("빨간 픽셀 수:", int(red.sum()), "/", red.size)
 빨간 픽셀 수: 3 / 6
 ```
 
+> 참고: 실제 사진 모습
+> ./code/data/s3_3.png
+> ![alt text](image-4.png)
+
 문제 2. **BGR을 RGB로 바꾸는 방법은 cv2.cvtColor 말고도 채널 순서를 거꾸로 하는 img[:, :, ::-1]가 있다.** 두 방법의 결과가 같은지 확인한다.
 ```py
 import cv2

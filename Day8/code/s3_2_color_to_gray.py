@@ -7,11 +7,12 @@ colors = {"빨강": (0, 0, 255),
           "노랑": (0, 255, 255), 
           "흰색": (255, 255, 255), 
           "회색": (128, 128, 128)}
-
+pxs = []
 
 for name, bgr in colors.items():
     px = np.array([[bgr]], dtype=np.uint8)
     print(f"{name}: 흑백 밝기 {cv2.cvtColor(px, cv2.COLOR_BGR2GRAY)[0, 0]}")
+    pxs.append(px)
 
 # 빨강: 흑백 밝기 76
 # 초록: 흑백 밝기 150
@@ -19,3 +20,5 @@ for name, bgr in colors.items():
 # 노랑: 흑백 밝기 226
 # 흰색: 흑백 밝기 255
 # 회색: 흑백 밝기 128
+
+cv2.imwrite('./data/s3_2.png', np.array(pxs))

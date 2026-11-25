@@ -1,4 +1,5 @@
 import numpy as np
+import cv2
 
 img = np.array([
     [(0, 0, 250), (0, 200, 0), (10, 20, 230)],
@@ -12,3 +13,5 @@ b, g, r = img[:, :, 0].astype(int),\
 red = (r > 200) & (g < 50) & (b < 50)
 print("빨간 픽셀 수:", int(red.sum()), "/", red.size)
 # 빨간 픽셀 수: 3 / 6
+
+cv2.imwrite('./data/s3_3.png', img)
