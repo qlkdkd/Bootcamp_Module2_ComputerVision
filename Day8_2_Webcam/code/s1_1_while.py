@@ -25,5 +25,8 @@ while True:
         break
 
 print("처리한 프레임:", frames, " 마지막 평균 밝기:", round(float(gray.mean()), 1) if frames else None)
+
+
+'''창 닫기'''
 cap.release()
 cv2.destroyAllWindows()
