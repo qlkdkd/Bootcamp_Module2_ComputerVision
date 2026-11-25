@@ -10,6 +10,6 @@ print("부품 자리 평균 밝기:", img[1:3, 2:5].mean(),
       " 전체 평균:", round(img.mean(), 1))
 
 cv2.imshow('img', img)
-cv2.imwrite('./Day8/code/data/s1_1.png', img)
+cv2.imwrite('./Day8_1/code/data/s1_1.png', img)
 cv2.waitKey()
 cv2.destroyAllWindows()

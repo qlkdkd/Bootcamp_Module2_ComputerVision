@@ -12,6 +12,6 @@ print('전체 평균:', img.mean())
 import cv2
 
 cv2.imshow('img', img)
-cv2.imwrite('./Day8/code/data/s1_4_img.png', img)
+cv2.imwrite('./Day8_1/code/data/s1_4_img.png', img)
 cv2.waitKey()
 cv2.destroyAllWindows()
