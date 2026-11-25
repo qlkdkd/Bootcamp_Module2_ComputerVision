@@ -1,7 +1,8 @@
 import time
 import cv2
 
-cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
+
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 if not cap.isOpened():
     print("카메라를 열 수 없다. 번호를 1로 바꿔 보거나 연결을 확인한다.")
     raise SystemExit
